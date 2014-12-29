@@ -62,7 +62,10 @@ public class Drapeaux extends JFrame {
 				if (abbrev.equalsIgnoreCase(reponse)) {
 					dispose();
 					System.out.println("bravo");
-					QuestionParPays questionParPays = new QuestionParPays();
+					// bonne reponse
+					FenetrePrincipale.score++;
+					QuestionParPays questionParPays = new QuestionParPays(
+							abbrev);
 					questionParPays.setVisible(true);
 				} else {
 					System.err.println("mauvaise reponse ...");

@@ -24,6 +24,7 @@ public class FenetrePrincipale extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
+	public static int score = 0;
 
 	/**
 	 * Launch the application.
@@ -73,11 +74,16 @@ public class FenetrePrincipale extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				Drapeaux drapaux;
+				JoueurScore joueurScore = new JoueurScore(textField.getText(),
+						textField_1.getText());
+				joueurScore.setVisible(true);
+				joueurScore.setBounds(910, 0, 450, 300);
 				try {
 					Pays[] pays = Pays.values();
 					for (int i = 0; i < pays.length; i++) {
 						drapaux = new Drapeaux(pays[i].getAbbreviation());
 						drapaux.setVisible(true);
+
 					}
 
 				} catch (IOException e1) {
