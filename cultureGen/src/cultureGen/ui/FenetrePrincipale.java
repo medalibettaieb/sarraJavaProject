@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -16,8 +15,6 @@ import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
-
-import cultureGen.pays.Pays;
 
 public class FenetrePrincipale extends JFrame {
 
@@ -73,23 +70,8 @@ public class FenetrePrincipale extends JFrame {
 		btnCommencer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				Drapeaux drapaux;
-				JoueurScore joueurScore = new JoueurScore(textField.getText(),
-						textField_1.getText());
-				joueurScore.setVisible(true);
-				joueurScore.setBounds(910, 0, 450, 300);
-				try {
-					Pays[] pays = Pays.values();
-					for (int i = 0; i < pays.length; i++) {
-						drapaux = new Drapeaux(pays[i].getAbbreviation());
-						drapaux.setVisible(true);
-
-					}
-
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+				GamesRoom gamesRoom = new GamesRoom(textField.getText(),textField_1.getText());
+				gamesRoom.setVisible(true);
 
 			}
 		});
