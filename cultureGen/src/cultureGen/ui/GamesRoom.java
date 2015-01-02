@@ -66,6 +66,11 @@ public class GamesRoom extends JFrame {
 		});
 
 		JButton btnJeu = new JButton("jeu 3");
+		btnJeu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane
 				.setHorizontalGroup(gl_contentPane
