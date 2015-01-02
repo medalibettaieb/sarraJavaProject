@@ -1,0 +1,21 @@
+introduction :
+
+	tu parle des jeux en generale , ceux desitinés au enfants de moin de 15 ans.
+	
+Analyse :
+	
+	tu presente les acteurs de ton application : les joueurs et l'administrateur
+	tu peux utiliser un diagramme UML comme ona vu en cours (diag de cas d'utilistaion)
+	
+Conception 
+	
+	un diagramme de calsses où il ya les diffirentes classe de ton appli
+	
+Réalisation 
+
+	un petit tour sur les diffirentes interfaces de l'appli avec une explication textuelle 
+	
+Conclusion 
+
+	un receuil des diffirantes fonctionnlités de l'appli et les contrainte et difficultés rencontrés
+	enfin une perspective.
