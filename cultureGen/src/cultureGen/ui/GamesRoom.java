@@ -65,10 +65,11 @@ public class GamesRoom extends JFrame {
 			}
 		});
 
-		JButton btnJeu = new JButton("jeu 3");
+		JButton btnJeu = new JButton("cartoon");
 		btnJeu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				ModifierCartoon.createAndShowGUI();
+
 			}
 		});
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
