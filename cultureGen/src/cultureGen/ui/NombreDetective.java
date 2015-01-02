@@ -56,6 +56,7 @@ public class NombreDetective extends JFrame {
 					if (nombreIntroduit == nombre) {
 						JOptionPane.showMessageDialog(null,
 							    "bravo vous avez deviné le nombre exact ...");
+						FenetrePrincipale.score+=10;
 						dispose();
 					} else {
 						JOptionPane.showMessageDialog(null,

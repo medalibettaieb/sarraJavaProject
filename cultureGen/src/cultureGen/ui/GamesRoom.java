@@ -60,6 +60,9 @@ public class GamesRoom extends JFrame {
 		JButton btnNombreDetective = new JButton("nombre detective");
 		btnNombreDetective.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				JoueurScore joueurScore = new JoueurScore(nom, prenom);
+				joueurScore.setVisible(true);
+				joueurScore.setBounds(910, 0, 450, 300);
 				NombreDetective nombreDetective = new NombreDetective();
 				nombreDetective.setVisible(true);
 			}
